@@ -11,6 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 " colors
 Plugin 'NLKNguyen/papercolor-theme'
+" clang-format
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 
