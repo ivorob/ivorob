@@ -18,6 +18,8 @@ call vundle#end()
 
 filetype plugin indent on
 
+set backspace=indent,eol,start
+
 set tabstop=4
 set expandtab
 set shiftwidth=4
