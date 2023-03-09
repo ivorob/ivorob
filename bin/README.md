@@ -2,6 +2,7 @@
 
 ## Usage
 
+```
 usage: make-stub-cpp-project.py [-h] path project
 
 positional arguments:
@@ -10,6 +11,7 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
+```
 
 ## Action
 
