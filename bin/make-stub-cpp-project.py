@@ -23,6 +23,7 @@ SET (SOURCES
     )
 
 ADD_EXECUTABLE ({project} ${SOURCES})
+TARGET_INCLUDE_DIRECTORIES ({project} PRIVATE ${INCLUDE_DIR})
 """
 
 with open(os.path.join(args.path, "CMakeLists.txt"), 'w') as file:
@@ -33,7 +34,9 @@ os.mkdir(sourceDirectory)
 
 mainCppFileContent = """#include <iostream>
 
-int main(int /* argc */, char* /* argv */[]) {
+#include "DebugHelpers.h"
+
+int main() {
     std::cout << "{project}" << std::endl;
     return 0;
 }
@@ -41,4 +44,31 @@ int main(int /* argc */, char* /* argv */[]) {
 
 with open(os.path.join(sourceDirectory, 'main.cpp'), 'w') as file:
     file.write(mainCppFileContent.replace('{project}', args.project))
+
+includeDirectory = os.path.join(args.path, 'include')
+os.mkdir(includeDirectory)
+
+helpersFileContent = """#pragma once
+
+#include <ostream>
+
+// print vector
+template <typename T>
+std::ostream& operator<<(std::ostream& output, const std::vector<T>& data) {
+    output << "[";
+    for (size_t i = 0; i < data.size(); ++i) {
+        if (i != 0) {
+            output << ", ";
+        }
+
+        output << data[i];
+    }
+
+    output << "]";
+    return output;
+}
+
+"""
     
+with open(os.path.join(includeDirectory, 'DebugHelpers.h'), 'w') as file:
+    file.write(helpersFileContent)
