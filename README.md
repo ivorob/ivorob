@@ -5,7 +5,7 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ivorob&layout=compact&show_icons=true&theme=dark)](https://github.com/ivorob/github-readme-stats)
 
-[![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=ivorob&theme=dark)]
+[![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=ivorob&theme=dark)](https://github.com/ivorob)
 <!--
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ivorob&theme=dark)](https://git.io/streak-stats)
 
