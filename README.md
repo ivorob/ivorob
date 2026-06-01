@@ -1,7 +1,7 @@
 ### Hi there 👋 I am Ivan Vorobyev
 ## About me
 
-[![Ivan's github stats](https://github-readme-stats.vercel.app/api?username=ivorob&show_icons=true&theme=dark)](https://github.com/ivorob/github-readme-stats)
+[![Ivan's GitHub stats](https://github-stats-extended.vercel.app/api?username=ivorob)](https://github.com/stats-organization/github-stats-extended)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ivorob&layout=compact&show_icons=true&theme=dark)](https://github.com/ivorob/github-readme-stats)
 
